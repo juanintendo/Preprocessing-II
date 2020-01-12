@@ -5,7 +5,13 @@
 	padding: @p;
   }
 
-  .displayflex(@d, @j){
-	display: @d;
-	justify-content:@j;
-	}
+  .flex-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    padding: 1%;
+  }
+
+  .box(@w, @h) {
+      width: @w;
+      height: @h;
