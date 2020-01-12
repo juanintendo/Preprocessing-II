@@ -172,7 +172,6 @@ li,
 a {
   font-weight: 500;
   font-size: 20px;
-  color: #000000;
   text-decoration: none;
 }
 header {
@@ -180,22 +179,50 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 30px 10%;
+  border-bottom: 2px dashed silver;
 }
-header .logo {
+.logo {
   cursor: pointer;
+  font-weight: bold;
+  font-size: 5rem;
 }
-header .nav_links {
+.nav_links {
   list-style: none;
 }
-header .nav_links li {
+@media (max-width: 700px) {
+  .nav_links {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .nav_links {
+    flex-direction: column;
+  }
+}
+.nav_links li {
   display: inline-block;
   padding: 0px 20px;
 }
-header .nav_links li a {
+.nav_links li a {
   transition: all 0.3s ease 0s;
 }
 a:hover {
   color: #0088a9;
+}
+.welcome .main-image {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+.welcome h2 {
+  font-weight: 800;
+  padding-left: 120px;
+}
+.main-image {
+  width: 80%;
+  height: auto;
 }
 .footer {
   width: 100%;

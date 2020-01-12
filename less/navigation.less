@@ -10,15 +10,28 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    
-    
+    border-bottom: 2px dashed silver;
+
+}
+   
     .logo{
         cursor: pointer;
+        font-weight: bold;
+        font-size: 5rem;
     }
 
     .nav_links{
         list-style: none;
-        
+
+        @media ( max-width: 700px ) {
+            justify-content: center;
+          }
+          
+          @media ( max-width: 500px ) {
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+          }
 
         li{
             display: inline-block;
@@ -30,10 +43,34 @@ header{
             }
         }
     }
-}
+
 
 a:hover{
     color: #0088a9;  
   }
 
 
+.welcome{
+    
+    .main-image{
+        width: 80%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    h2{
+        font-weight: 800;
+        padding-left: 100px;
+    }
+
+
+}  
+
+
+
+@media screen and (max-width: 500px) {
+    .header {
+      flex-direction: column;
+    }
